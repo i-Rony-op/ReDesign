@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Design = () => {
   const [images, setImages] = useState([
@@ -79,6 +81,17 @@ const Design = () => {
     }
   });
 
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(() => {
+    gsap.from("h1", {
+      x: -300,
+      opacity: 0,
+      stagger: 0.1,
+      duration: 1,
+      ease: "power3.inOut",
+    });
+  });
   return (
     <div className="w-full mt-10">
       <div className="relative max-w-screen-2xl mx-auto text-center">
