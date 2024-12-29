@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Product from "./Product";
 import { motion } from "framer-motion";
 
-import vid_1 from "../../../public/videos/vid_1.mp4";
-import vid_2 from "../../../public/videos/vid_2.mp4";
-import vid_3 from "../../../public/videos/vid_3.mp4";
-import vid_4 from "../../../public/videos/vid_4.mp4";
+import vid_1 from "../../../public/videos/vid_1.webm";
+import vid_2 from "../../../public/videos/vid_2.webm";
+import vid_3 from "../../../public/videos/vid_3.webm";
+import vid_4 from "../../../public/videos/vid_4.webm";
 
 const Products = () => {
   const products = [
