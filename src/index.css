@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: "santoshi";
-  src: url("./public/font/Satoshi-Variable.woff2") format("woff2");
+  src: url("/public/font/Satoshi/Fonts/Variable/Satoshi-Variable.ttf")
+    format("woff2");
 }
 
 * {
