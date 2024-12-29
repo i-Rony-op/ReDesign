@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "santoshi";
+  src: url("./public/fonts/Satoshi-Variable.ttf");
+}
+
+* {
+  font-family: santoshi;
+}
+/* Universal styles */
+.scrollable-element {
+  scrollbar-color: #18181b83 #18181bec; /* Thumb color, Track color (Firefox) */
+  scrollbar-width: thin; /* Options: auto, thin, none (Firefox) */
+}
+
+/* WebKit browsers (Chrome, Edge, Safari, Brave) */
+.scrollable-element::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+.scrollable-element::-webkit-scrollbar-track {
+  background: #18181bec; /* Track background */
+}
+
+.scrollable-element::-webkit-scrollbar-thumb {
+  background: #18181b83; /* Thumb background */
+}
+
+/* Optional: Hover effect for WebKit browsers */
+.scrollable-element::-webkit-scrollbar-thumb:hover {
+  background: #18181b99;
+}
